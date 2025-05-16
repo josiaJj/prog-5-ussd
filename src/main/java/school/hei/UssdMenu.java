@@ -3,20 +3,8 @@ package school.hei;
 import java.util.Scanner;
 
 public class UssdMenu {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Entrez code USSD (#111# pour démarrer) : ");
-        String code = scanner.nextLine().trim();
 
-        if ("#111#".equals(code)) {
-            displayMainMenu(scanner);
-        } else {
-            System.out.println("Code USSD invalide.");
-        }
-        scanner.close();
-    }
-
-    private static void displayMainMenu(Scanner scanner) {
+    static void displayMainMenu(Scanner scanner) {
         System.out.println("1. Mvola");
         System.out.println("2. Mes offres");
         System.out.print("Sélectionnez une option : ");
